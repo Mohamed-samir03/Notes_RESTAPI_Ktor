@@ -1,6 +1,7 @@
 package com.example
 
 import com.example.plugins.*
+import com.example.routing.authRouting
 import com.example.routing.notesRouting
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -15,4 +16,5 @@ fun Application.module() {
     configureSerialization()
     configureRouting()
     notesRouting()
+    authRouting()
 }

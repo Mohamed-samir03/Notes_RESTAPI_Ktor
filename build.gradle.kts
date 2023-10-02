@@ -33,4 +33,5 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("org.ktorm:ktorm-core:3.4.1")
     implementation("com.mysql:mysql-connector-j:8.1.0")
+    implementation("org.mindrot:jbcrypt:0.4")
 }
