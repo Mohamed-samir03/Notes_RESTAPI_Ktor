@@ -67,5 +67,42 @@ fun Application.notesRouting(){
 
         }
 
+        put("/notes/{id}"){
+
+            val id = call.parameters["id"]?.toInt() ?: -1
+
+            val request = call.receive<NoteRequest>()
+
+            val note = db.update(NotesEntity){
+                set(it.note,request.note)
+                where {
+                    it.id eq id
+                }
+            }
+
+            if (note == 1){
+                call.respond(HttpStatusCode.OK,NoteResponse(true,"note update success"))
+            }else{
+                call.respond(HttpStatusCode.BadRequest,NoteResponse(false,"failed update"))
+            }
+
+        }
+
+        delete("/notes/{id}"){
+
+            val id = call.parameters["id"]?.toInt() ?: -1
+
+            val note = db.delete(NotesEntity){
+                it.id eq id
+            }
+
+            if (note == 1){
+                call.respond(HttpStatusCode.OK,NoteResponse(true,"note deleted success"))
+            }else{
+                call.respond(HttpStatusCode.BadRequest,NoteResponse(false,"failed delete"))
+            }
+
+        }
+
     }
 }
