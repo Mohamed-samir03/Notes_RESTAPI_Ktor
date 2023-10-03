@@ -5,8 +5,11 @@ import com.example.entities.UsersEntity
 import com.example.models.NoteResponse
 import com.example.models.User
 import com.example.models.Users
+import com.example.utils.TokenManager
+import com.typesafe.config.ConfigFactory
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.config.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -16,6 +19,8 @@ import org.mindrot.jbcrypt.BCrypt
 fun Application.authRouting(){
 
     val db = DatabaseConnection.database
+
+    val tokenManager = TokenManager(HoconApplicationConfig(ConfigFactory.load()))
 
     routing {
 
@@ -87,7 +92,9 @@ fun Application.authRouting(){
                 return@post
             }
 
-            call.respond(HttpStatusCode.OK, NoteResponse(true,"login success"))
+            val token = tokenManager.generateJWT(userCheck)
+
+            call.respond(HttpStatusCode.OK, NoteResponse(true,token))
 
         }
 

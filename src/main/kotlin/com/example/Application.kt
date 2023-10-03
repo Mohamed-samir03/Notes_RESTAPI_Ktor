@@ -14,6 +14,7 @@ fun main() {
 
 fun Application.module() {
     configureSerialization()
+    configureAuthorization()
     configureRouting()
     notesRouting()
     authRouting()
