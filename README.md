@@ -4,45 +4,45 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 
 ### Endpoint CRUD Operations For Notes
 
-- Get All Notes.
+- `Get` All Notes.
   
 ```
 {baseurl}/notes
 ```
 
-- Get One Note By ID.
+- `Get` One Note By ID.
   
 ```
 {baseurl}/notes/{id}
 ```
 
-- POST One Note.
+- `POST` One Note.
   
 ```
 {baseurl}/notes
 ```
 
 ```JSON
-// your json request
+/* your json request */
 {
     "note":"write your note"
 }
 ```
 
-- PUT Note By ID.
+- `PUT` Note By ID.
   
 ```
 {baseurl}/notes/{id}
 ```
 
 ```JSON
-// your json request
+/* your json request */
 {
     "note":"update your note"
 }
 ```
 
-- DELETE Note By ID.
+- `DELETE` Note By ID.
   
 ```
 {baseurl}/notes/{id}
