@@ -3,7 +3,9 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 
 
 ### Endpoint CRUD Operations For Notes
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015` All Notes.
+
+- ![#c5f015]Get `#c5f015` All Notes.
+  
 ```
 {baseurl}/notes
 ```
