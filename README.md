@@ -21,7 +21,7 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 ```
 {baseurl}/notes
 ```
-  -- your json request
+your json request
 ```JSON
 {
     "note":"write your note"
@@ -33,7 +33,7 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 ```
 {baseurl}/notes/{id}
 ```
-  -- your json request
+your json request
 ```JSON
 {
     "note":"update your note"
@@ -45,5 +45,35 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 ```
 {baseurl}/notes/{id}
 ```
+
+### Authentication Endpoint
+
+- `POST` Login User.
+  
+```
+{baseurl}/login
+```
+your json request
+```JSON
+{
+    "userName":"mosamir",
+    "password":"1234567"
+}
+```
+
+- `POST` Register User.
+  
+```
+{baseurl}/register
+```
+your json request
+```JSON
+{
+    "userName":"mosamir",
+    "password":"1234567"
+}
+```
+
+
 
 
