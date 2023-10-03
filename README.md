@@ -8,7 +8,7 @@ Runs embedded web server on [localhost:8080](http://127.0.0.1:8080) `(baseurl)`.
 - `Get` All Notes.
   
 ```
-{[baseurl](http://127.0.0.1:8080)}/notes
+{baseurl}/notes
 ```
 
 - `Get` One Note By ID.
