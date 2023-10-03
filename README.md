@@ -4,7 +4,7 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 
 ## Endpoint CRUD Operations For Notes
 
-Get All Notes
+<font color="green">Get</font> All Notes.
 ```
 {baseurl}/notes
 ```
