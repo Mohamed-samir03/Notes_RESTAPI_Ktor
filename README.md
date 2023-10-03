@@ -21,9 +21,8 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 ```
 {baseurl}/notes
 ```
-
+your json request
 ```JSON
-/* your json request */
 {
     "note":"write your note"
 }
@@ -34,9 +33,8 @@ RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotli
 ```
 {baseurl}/notes/{id}
 ```
-
+your json request
 ```JSON
-/* your json request */
 {
     "note":"update your note"
 }
