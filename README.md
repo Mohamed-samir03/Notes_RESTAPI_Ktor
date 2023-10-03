@@ -1,4 +1,4 @@
-# Notes_RESTAPI_Using_Ktor
-RESTAPI Notes and Auth Using [ktor](https://start.ktor.io) `(Kotlin)` and `mySQL Database`.
+# Ktor_HTTP API and Authentication
+RESTAPI Notes and Authentication Using [ktor](https://ktor.io/) `(Kotlin)` and `mySQL Database`.
 
 
