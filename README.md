@@ -1,6 +1,7 @@
 # Ktor HTTP and Authentication API
 RESTAPI Notes `(CRUD)` and Authentication Using [ktor](https://ktor.io/) `(Kotlin)` and `mySQL Database`.
 
+Runs embedded web server on [localhost:8080](http://127.0.0.1:8080) `(baseurl)`.
 
 ### Endpoint CRUD Operations For Notes
 
