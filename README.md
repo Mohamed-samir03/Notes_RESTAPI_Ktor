@@ -75,6 +75,14 @@ your json request
 }
 ```
 
+### mySQL Database
+
+- Create Database
+```SQL
+create database notes;
+```
+
+
 
 
 
