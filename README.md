@@ -5,13 +5,13 @@ Runs embedded web server on [localhost:8080](http://127.0.0.1:8080) `(baseurl)`.
 
 ### Endpoint CRUD Operations For Notes
 
-- `Get` All Notes.
+- `GET` All Notes.
   
 ```
 {baseurl}/notes
 ```
 
-- `Get` One Note By ID.
+- `GET` One Note By ID.
   
 ```
 {baseurl}/notes/{id}
