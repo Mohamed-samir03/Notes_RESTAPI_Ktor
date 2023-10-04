@@ -89,7 +89,7 @@ USE notes;
 ```
 
 - Create Notes Table.
-```SQL
+```mySQL
 create table note(
 id int not null auto_increment,
 note varchar(1500) not null,
