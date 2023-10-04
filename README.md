@@ -85,7 +85,7 @@ create database notes;
 
 - Select Database For Use.
 ```SQL
-use notes;
+USE notes;
 ```
 
 - Create Notes Table.
