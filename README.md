@@ -75,7 +75,7 @@ your json request
 }
 ```
 
-### mySQL Database
+### MySQL Database
 can use `MySQL Workbench` for create yor database.
 
 - Create Database.
@@ -85,11 +85,11 @@ create database notes;
 
 - Select Database For Use.
 ```SQL
-USE notes;
+use notes;
 ```
 
 - Create Notes Table.
-```mySQL
+```SQL
 create table note(
 id int not null auto_increment,
 note varchar(1500) not null,
