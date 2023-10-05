@@ -76,7 +76,7 @@ your json request
 ```
 
 ### MySQL Database
-can use `MySQL Workbench` for create yor database.
+can use `MySQL Workbench` for create your database.
 
 - Create Database.
 ```SQL
